@@ -1,0 +1,500 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    color: #fffffe;
+    background-color: #0f0e17;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.Container {
+    display: flex;
+    align-items: Center;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+nav {
+    width: 100%;
+    background-color: #0f0e17;
+    color: white;
+    box-sizing: border-box;
+}
+
+nav ul {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    list-style: none;
+}
+
+nav ul li {
+    padding: 20px;
+    display: flex;
+    list-style: none;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+.Hero {
+    height: 50vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.Hero H1 {
+    font-size: 5em;
+    visibility: hidden;
+    animation: myanimation 2s ease-in 1s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes myanimation {
+    0% {
+        visibility: hidden;
+        opacity: 0;
+    }
+
+    25% {
+        opacity: .25;
+    }
+
+    50% {
+        opacity: .50;
+    }
+
+    75% {
+        opacity: .75;
+    }
+
+    100% {
+        visibility: visible;
+    }
+}
+
+.Hero h4 {
+    margin: .5% 0;
+    font-size: 1em;
+    visibility: hidden;
+    animation: myanimation 4s ease-in;
+    animation-fill-mode: forwards;
+}
+
+.btn {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+
+}
+
+.btn button {
+    margin: 2% 0;
+    position: relative;
+    background: linear-gradient(to bottom right, #ff8906, #FF9A5A);
+    border: 0;
+    /* width: 150px; */
+    border-radius: 12px;
+    color: #FFFFFF;
+    cursor: pointer;
+    font-family: -apple-system, system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 2.5;
+    outline: transparent;
+    padding: 0 1rem;
+    text-align: center;
+    text-decoration: none;
+    transition: box-shadow .2s ease-in-out;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    white-space: nowrap;
+    visibility: hidden;
+    animation: mybuttonanimation 1s linear 3s;
+    animation-fill-mode: forwards;
+}
+
+.btn button:not([disabled]):hover {
+    box-shadow: 0 0 .25rem rgba(0, 0, 0, 0.5), -.125rem -.125rem 1rem rgba(239, 71, 101, 0.5), .125rem .125rem 1rem rgba(255, 154, 90, 0.5);
+}
+
+@keyframes mybuttonanimation {
+
+    0% {
+        visibility: hidden;
+        opacity: 0;
+        align-self: flex-start;
+        /* left: 10%; */
+    }
+
+    25% {
+        /* margin-left: 10%; */
+        /* left: 20%; */
+        opacity: .25;
+    }
+
+    50% {
+        /* margin-left: 20%; */
+        /* left: 3
+
+        0%; */
+        opacity: .50;
+    }
+
+    75% {
+        /* margin-left: 30%; */
+       /* left: 40%;  */
+        opacity: .75;
+    }
+
+    100% {
+        align-self: center;
+        visibility: visible;
+    }
+}
+
+
+h4 {
+    color: #fffffe;
+    margin-top: 100px;
+    margin-bottom: 20px;
+    font-size: 2.5em;
+}
+
+h5 {
+    color: #a7a9be;
+    margin-bottom: 10px;
+    font-size: 1.5em;
+}
+
+h6 {
+    color: #a7a9be;
+    font-size: .80em;
+    margin: 2% 0;
+}
+
+.Hero p {
+    padding: 0 10%;
+    margin-bottom: 2;
+    text-align: center;
+    line-height: 1.3em;
+    font-size: .90em;
+    color: #a7a9be;
+    visibility: hidden;
+    animation: myanimation 1s ease-in 2s;
+    animation-fill-mode: forwards;
+}
+
+p a {
+    color: #a7a9be;
+}
+
+.Name {
+    color: #fffffe;
+    font-size: 5em;
+}
+
+.Skills {
+
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+}
+
+.Skills h4 {
+    color: #fffffe;
+    margin-top: 100px;
+    margin-bottom: 20px;
+    font-size: 2.5em;
+}
+
+.skillset {
+    margin: 0px 10%;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+}
+
+.skillset div {
+    box-shadow: rgb(194, 195, 241, 0.35) 0px 5px 15px;
+    /* box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; */
+    /* box-shadow: #c2c3f1 0px 7px 29px 0px; */
+    border: 1px solid #34354e;
+    margin: 40px;
+    padding: 20px;
+    transition-property: all;
+    transition-duration: .5s;
+    transition-timing-function: ease-in-out;
+}
+
+
+.skillset div:hover {
+    background-color: #484a68;
+    cursor: pointer;
+    transform: rotateY(360deg);
+}
+
+.Experience {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    width: 100%;
+}
+
+.Experience h5 {
+    color: #ff8906;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 1.5em;
+}
+
+.Experience h4 {
+    color: #fffffe;
+    margin-top: 100px;
+    margin-bottom: 20px;
+    font-size: 2.5em;
+}
+
+.line-left {
+    width: 100%;
+    border-left: 2px solid #a8a9b9;
+    height: 200px;
+}
+
+.line-right {
+    width: 100%;
+    border-right: 2px solid #a8a9b9;
+    height: 200px;
+}
+
+.dot {
+    height: 15px;
+    width: 15px;
+    border: 3px solid #a8a9b9;
+    /* background-color: #bbb; */
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.experience-content {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.Content-right {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    width: 100%;
+}
+
+.Content-left {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+}
+
+.job-title {
+    color: #fffffe;
+    font-size: 1.2em;
+    margin: 5px 20px 0px 20px;
+}
+
+.job-date {
+    padding: 0;
+    margin: 0px 20px 5px 20px;
+    font-size: 1em;
+    color: #a7a9be;
+    text-align: left;
+}
+
+.job-desc-left {
+    padding: 10px 0px 20px 20px;
+    margin: 0px;
+    width: 80%;
+    text-align: justify;
+    line-height: 1.3em;
+    font-size: 1em;
+    color: #a7a9be;
+}
+
+.job-desc-right {
+    padding: 10px 20px 20px 0px;
+    margin: 0px;
+    width: 80%;
+    text-align: justify;
+    line-height: 1.3em;
+    font-size: 1em;
+    color: #a7a9be;
+}
+
+.Certification {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    width: 100%;
+}
+
+.Certification h4 {
+    display: flex;
+
+    margin-top: 100px;
+}
+
+.Certificate-list {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+}
+
+.Certificate-list div {
+    box-shadow: rgb(194, 195, 241, 0.35) 0px 5px 15px;
+    /* box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; */
+    /* box-shadow: #c2c3f1 0px 7px 29px 0px; */
+    border: 1px solid #34354e;
+    margin: 40px;
+    padding: 20px;
+    transition-property: all;
+    transition-duration: .5s;
+    transition-timing-function: ease-in-out;
+}
+
+
+
+
+/* screen for mobile phone */
+@media only screen and (max-width: 480px) {
+    .Hero {
+        height: 80vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .Hero H1 {
+        font-size: 2em;
+    }
+
+    .Hero h4 {
+        margin: .5% 0;
+        font-size: .90em;
+    }
+
+    .Hero p {
+        line-height: 1.2em;
+        font-size: .65em;
+    }
+
+    .btn button {
+        margin: 2% 0;
+        font-size: .65em;
+    }
+    .skillset div {
+        height: 100px;
+        margin: 15px;
+        box-shadow: rgb(194, 195, 241, 0.35) 0px 2px 10px;
+    }
+    .skillset div img{
+        height: 70px;
+        width: auto;
+    }
+
+
+.Skills h4 {
+    font-size: 1.5em;
+}
+
+.Experience {
+    margin-top: 10px;
+    width: 100%;
+}
+
+.Experience h5 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 1em;
+}
+
+.Experience h4 {
+    margin-top: 100px;
+    margin-bottom: 5px;
+    font-size: 1.5em;
+}
+
+.job-title {
+    font-size: .8em;
+    margin: 5px 10px 0px 10px;
+}
+
+.job-date {
+    padding: 0;
+    margin: 0px 10px 5px 10px;
+    font-size: .7em;
+}
+.line-left {
+    border-left: 1px solid #a8a9b9;
+}
+
+.line-right {
+    border-right: 1px solid #a8a9b9;
+}
+
+.dot {
+    height: 5px;
+    width: 5px;
+}
+
+.job-desc-left {
+    padding: 10px 0px 20px 10px;
+    width: 95%;
+    font-size: .5em;
+}
+
+.job-desc-right {
+    padding: 10px 10px 20px 0px;
+    width: 95%;
+    font-size: .5em;
+}
+
+.Certification h4 {
+    display: flex;
+    font-size: 1.5em;
+    margin-top: 100px;
+}
+
+.Certificate-list div {
+    box-shadow: rgb(194, 195, 241, 0.35) 0px 5px 15px;
+    /* box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; */
+    /* box-shadow: #c2c3f1 0px 7px 29px 0px; */
+    border: 1px solid #34354e;
+    margin: 10px;
+    padding: 20px;
+}
+.Certificate-list div img{
+    height: 200px;
+    width: auto;
+}
+}
